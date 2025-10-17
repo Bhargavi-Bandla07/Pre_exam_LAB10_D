@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 // import config from './config'
 
-const API = `${import.meta.env.VITE_API_UR}/api/expenses`
+const API = `${import.meta.env.VITE_API_URL || ''}/api/expenses`
+
 
 // Expense fields: id, title, amount (number), category, date (ISO), note
 export default function ExpenseManager() {
