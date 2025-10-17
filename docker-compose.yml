@@ -16,7 +16,7 @@ services:
     image: bhargavi079/expense-backend22:latest
     container_name: springboot
     ports:
-      - "2009:2000"
+      - "2009:2008"
     depends_on:
       - mysqldb
     restart: on-failure
